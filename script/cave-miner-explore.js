@@ -235,9 +235,9 @@ function onTick(){
 
 //add BG to screen
 function loadBg(){
-    bgBack = new createjs.Bitmap("../images/cave-wall.png");    
-    bgMid = new createjs.Bitmap("../images/cave-form.png");
-    bgFront = new createjs.Bitmap("../images/cave-foreground.png");
+    bgBack = new createjs.Bitmap("images/cave-wall.png");    
+    bgMid = new createjs.Bitmap("images/cave-form.png");
+    bgFront = new createjs.Bitmap("images/cave-foreground.png");
 
     bgBack.x = -145;
     bgBack.y = -60;
@@ -266,16 +266,16 @@ function loadSounds(){
     pickaxeS = "pickaxe";
     
     //from http://soundbible.com/2057-Footsteps-On-Cement.html
-    createjs.Sound.registerSound("../sounds/step1.wav",step1S);
-    createjs.Sound.registerSound("../sounds/step2.wav",step2S);
-    createjs.Sound.registerSound("../sounds/step3.wav",step3S);
-    createjs.Sound.registerSound("../sounds/step4.wav",step4S);
+    createjs.Sound.registerSound("sounds/step1.wav",step1S);
+    createjs.Sound.registerSound("sounds/step2.wav",step2S);
+    createjs.Sound.registerSound("sounds/step3.wav",step3S);
+    createjs.Sound.registerSound("sounds/step4.wav",step4S);
     
     //from http://soundbible.com/682-Swoosh-1.html
-    createjs.Sound.registerSound("../sounds/jump.wav",jumpS);
+    createjs.Sound.registerSound("sounds/jump.wav",jumpS);
     
     //from http://soundbible.com/1980-Swords-Collide.html
-    createjs.Sound.registerSound("../sounds/pickaxe.wav",pickaxeS);
+    createjs.Sound.registerSound("sounds/pickaxe.wav",pickaxeS);
 }
 
 //plays a random step sound
